@@ -1,0 +1,52 @@
+{
+  "name": "github-pull-requests-files-changed-list",
+  "description": "A Chrome extension that displays a file difference list for pull requests on GitHub",
+  "author": "umesan",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:umesan/github-pull-requests-files-changed-list.git"
+  },
+  "keywords": [
+    "github",
+    "diff",
+    "pull-requests",
+    "file",
+    "changed",
+    "list"
+  ],
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "browserslist": [
+    "last 2 version"
+  ],
+  "scripts": {
+    "start": "webpack -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.4",
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "cssnano": "^4.1.8",
+    "mini-css-extract-plugin": "^0.5.0",
+
+    "@types/chrome": "^0.0.88",
+    "@types/webpack": "^4.39.1",
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "terser-webpack-plugin": "^4.1.0",
+
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-build-notifier": "^0.1.30",
+
+    "thread-loader": "^2.1.2",
+    "cache-loader": "^2.0.1",
+
+    "copy-webpack-plugin": "^5.0.4"
+  }
+}

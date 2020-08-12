@@ -1,0 +1,84 @@
+.github-pull-requests-files-changed-list {
+  width: 100%;
+  margin: 5px 0 20px;
+  color: #24292e;
+  border-radius: 6px;
+}
+.github-pull-requests-files-changed-list__header {
+  position: relative;
+  border: 1px solid #e1e4e8;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  padding: 8px 10px;
+  background-color: #fafbfc;
+  cursor: pointer;
+  .Details & {
+    border-bottom: 1px solid #e1e4e8;
+    border-radius: 6px;
+  }
+}
+.github-pull-requests-files-changed-list__title {
+  font-weight: bold;
+  font-size: 11px;
+}
+.github-pull-requests-files-changed-list__input {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 12px;
+  padding: 4px 10px;
+  min-width: 200px;
+  border: 1px solid #dfe2e5;
+  border-radius: 6px;
+
+  &:focus {
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  .Details & {
+    display: none;
+  }
+}
+
+.github-pull-requests-files-changed-list__body {
+  position: relative;
+  .Details--on & {
+    display: block;
+  }
+  .Details & {
+    display: none;
+  }
+  .is-loading & {
+    padding: 24px 16px;
+    border: 1px solid #e1e4e8;
+    border-radius: 0 0 6px 6px;
+  }
+  .width-full {
+    display: none;
+  }
+}
+.is-loading .width-full {
+  display: block;
+}
+
+.github-pull-requests-files-changed-list__textarea {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  color: #24292e;
+  border: 1px solid #e1e4e8;
+  border-radius: 0 0 6px 6px;
+  font-size: 12px;
+  overflow-y: hidden;
+  resize: vertical;
+  background-color: #fafbfc;
+  &:focus {
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;
+  }
+  .is-loading & {
+    display: none;
+  }
+}
